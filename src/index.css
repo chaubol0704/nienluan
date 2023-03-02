@@ -1,4 +1,94 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+// section
+//section-1
+.img {
+  aspect-ratio: none;
+}
+.text-box-2055834659 {
+  width: 80%;
+}
+.text-box-2055834659 .text {
+  font-size: 100%;
+}
+.banner-406485873 {
+  padding-top: 400px;
+}
+
+.banner-406485873 {
+  background-image: url(https://homebbq.thietkewebsitemienphi.com/wp-content/uploads/2018/02/menu_trang_chu_xeo_xeo_gogi.png);
+}
+.banner-2089604455 {
+  padding-top: 400px;
+}
+
+.banner-2089604455 {
+  background-image: url(https://homebbq.thietkewebsitemienphi.com/wp-content/uploads/2018/02/lau2-1.png);
+}
+.section {
+  color: #777;
+}
+.relative {
+  position: relative !important;
+}
+.section-content {
+  z-index: 1;
+  width: 100%;
+}
+.section-bg {
+  box-sizing: border-box;
+}
+.dark {
+  color: #f1f1f1;
+}
+.fs {
+  font-size: 95%;
+}
+.image_2097649255 {
+  width: 100%;
+}
+
+.alt-font {
+  font-size: 30px;
+  font-weight: normal;
+  letter-spacing: -2px;
+  font-family: "Berkshire Swash", sans-serif;
+}
+
+.is-divider {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  height: 2px;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 1em 0 1em;
+  width: 100%;
+  max-width: 30px;
+}
+.footer-2 {
+  background-color: #161616;
+}
+
+.absolute-footer {
+  background-color: #0a0a0a;
+}
+.absolute-footer.dark {
+  color: rgba(255, 255, 255, 0.5);
+}
+.copyright-footer {
+  font-size: 12px;
+}
+
+.footer-secondary {
+  font-size: 12px;
+}
+
+.footer.entry-meta {
+  display: none;
+}
+.nav-dark .header-button .is-outline:not(:hover) {
+  color: #c6c6c6;
+  border: 1px solid #c6c6c6;
+  text-transform: none;
+}
