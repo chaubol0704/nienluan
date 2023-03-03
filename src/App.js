@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import {Home, Homepage, Login} from './containers/Public'
+import {Home, Homepage, Login, DetailPost} from './containers/Public'
 import {path} from './ultils/constant'
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
           < Route path='*' element={<Homepage/>} />
           < Route path={path.HOME__PAGE} element={<Homepage/>} />
 
+          < Route path={path.DETAIL_POST__TITLE__POSTID} element={<DetailPost/>} />
         </Route>
        
          

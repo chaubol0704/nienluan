@@ -13,8 +13,8 @@ const Homepage = () => {
            
            <div className='w-full flex gap-4'>
                 <div className='w-[65%]'>
-                    <TinTuc/>
-                    <Pagination number={params.get('page')}/>
+                    <TinTuc page={params.get('page')}/>
+                    <Pagination page={params.get('page')}/>
                 </div>
 
                 <div className='w-[35%] border border-red-600' >

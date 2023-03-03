@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useRef, useState } from 'react'
 import logo from '../../assets/logo.png';
 import { path } from '../../ultils/constant'
 import { Button } from '../../components';
-import {Link, useNavigate} from 'react-router-dom';
+import {Link, useNavigate,useSearchParams} from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux'
 import * as actions from '../../store/actions'
 import Navigation from './Navigation';
@@ -11,12 +11,17 @@ const Header = () => {
     const { isLoggedIn } = useSelector(state => state.auth)
     const dispatch = useDispatch();
     const navigate = useNavigate();
+     const [searchParams] = useSearchParams()
+    const headerRef = useRef()
     const goLogin = useCallback((flag)=> {
         navigate(path.LOGIN , {state:{flag} })  
     },[])
-
+    // tro ve dau trang khi bam vao so phan trang
+    useEffect(() => {
+        headerRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }, [searchParams.get('page')])
     return (
-        <div className='w-full flex items-center justify-center bg-black gap-7 '>
+        <div ref={headerRef}  className='w-full flex items-center justify-center bg-black gap-7 '>
             <Link to={'/'} >
                 <img
                             src={logo}
